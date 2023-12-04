@@ -4,14 +4,16 @@ import css from "./Pages.module.css";
 
 
 const Pages = ({info, setPage}) => {
-  
+  //Get the window's width
   let [width, setWidth]= useState(window.innerWidth);
   console.log(width);
+  //Updating the window's dimension
   let updateDimension = () =>{
     
     setWidth(window.innerWidth);
   };
    
+  //Using effect hook to add and remove the event listenser according to the window resize
   useEffect(() => {
     window.addEventListener("resize", updateDimension);
     return () => window.removeEventListener("resize", updateDimension);
@@ -35,6 +37,7 @@ const Pages = ({info, setPage}) => {
       `}  
       </style>
 
+    {/*Pagination */}
     <ReactPaginate 
     className= {`${css.pagination} pagination justify-content-center gap-3 my-4`}
     previousLabel= {width < 546 ? "<<" : "Previous"}

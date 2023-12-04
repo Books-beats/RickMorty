@@ -14,8 +14,11 @@ const Gender = ({setPage, setGender}) => {
     </h2>
     <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
       <div className="accordion-body d-flex flex-wrap gap-2">
+      {/*Use of map function to iterate over the "gender" array. Each item of the array will be displayed 
+       as a different button with specified properties */}
       {gender.map((items, index) =>
         <Button 
+        //Updating the state related to gender
         x= {setGender}
         setPage= {setPage}
         key={index} 

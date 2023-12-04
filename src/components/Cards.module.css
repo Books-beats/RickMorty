@@ -15,6 +15,7 @@
     width: 23vw;
 }
 
+/*For screens upto 576px*/
 @media (max-width: 576px){
     .cards{
         width: 71vw;
@@ -24,6 +25,7 @@
     }
 }
 
+/*For screens between 576px and 768px*/
 @media (max-width: 768px) and (min-width:576px){
     .cards{
         width: 42vw;
@@ -32,6 +34,8 @@
         width: 36vw;
     }
 }
+
+/*For screens between 768px and 992px*/
 @media (max-width: 992px) and (min-width:768px){
     .cards{
         width: 30vw;

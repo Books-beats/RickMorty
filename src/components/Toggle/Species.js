@@ -16,8 +16,11 @@ const Species = ({setPage, setSpecies}) => {
     </h2>
     <div id="flush-collapseOne" className="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div className="accordion-body d-flex flex-wrap gap-2">
+      {/*Use of map function to iterate over the "Species" array. Each item of the array will be displayed 
+       as a different button with specified properties */}
       {species.map((items, index) =>
         <Button 
+        //Updating the state related to Species
         x= {setSpecies}
         setPage= {setPage}
         key={index} 

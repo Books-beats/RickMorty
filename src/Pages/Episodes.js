@@ -2,15 +2,20 @@ import React, {useState, useEffect} from 'react'
 import Cards from '../components/Cards';
 
 const Episodes = () => {
+  //State for storing episodes' id
   let [id, setId] = useState(1);
+  //State for storing information
   let [info, setInfo] = useState([]);
+  //State to store the results
   let [results, setResults] = useState([]);
+  //Destructuring
   let {air_date, name} = info;
   let total = 51;
   let title = "Episode"
   
   let api= `https://rickandmortyapi.com/api/episode/${id}`;
-
+  
+  //Fetching episodes' infromation 
   useEffect(() => {
   (async function () {
     let data = await fetch(api).then((res) => res.json());
@@ -50,6 +55,8 @@ const Episodes = () => {
    
     <div className="offcanvas-body">
       <div className="input-group mb-3">
+        {/*Creating a dropdown list based on the total number of episodes.
+       On clicking on an episode, the state variable "id" is updated*/}
          <select onChange={(e) => setId(e.target.value)} className="form-select" id="inputGroup">
            <option value="1" selected>Choose...</option>
            {[...Array(total).keys()].map((y) => {

@@ -8,9 +8,12 @@ const Cards = ({results, page}) => {
       }
     let display;
   if(results){
+    //If results are matched then, cards are generated for each character
     display=results.map(funct=>{
      let {id, name, image, status, location}= funct;
         return ( 
+        /*Use of <link> to set the url. It is used so that each card can become clickable link which will enable
+        them to get to the detailed description of each character*/
         <Link
          style={{textDecoration: "none"}} 
          to= {`${page}${id}`}
