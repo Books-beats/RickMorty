@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.165d77d4.css",
-    "main.js": "/react-gh-pages/static/js/main.ac227d07.js",
-    "static/js/787.ec704a7a.chunk.js": "/react-gh-pages/static/js/787.ec704a7a.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.165d77d4.css.map": "/react-gh-pages/static/css/main.165d77d4.css.map",
-    "main.ac227d07.js.map": "/react-gh-pages/static/js/main.ac227d07.js.map",
-    "787.ec704a7a.chunk.js.map": "/react-gh-pages/static/js/787.ec704a7a.chunk.js.map"
+    "main.css": "/RickMorty/static/css/main.165d77d4.css",
+    "main.js": "/RickMorty/static/js/main.133d7e58.js",
+    "static/js/787.ec704a7a.chunk.js": "/RickMorty/static/js/787.ec704a7a.chunk.js",
+    "index.html": "/RickMorty/index.html",
+    "main.165d77d4.css.map": "/RickMorty/static/css/main.165d77d4.css.map",
+    "main.133d7e58.js.map": "/RickMorty/static/js/main.133d7e58.js.map",
+    "787.ec704a7a.chunk.js.map": "/RickMorty/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.165d77d4.css",
-    "static/js/main.ac227d07.js"
+    "static/js/main.133d7e58.js"
   ]
 }
